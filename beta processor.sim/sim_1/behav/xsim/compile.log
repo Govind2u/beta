@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/clint.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clint
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/csr_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_pipe_dff
+INFO: [VRFC 10-311] analyzing module gen_rst_0_dff
+INFO: [VRFC 10-311] analyzing module gen_rst_1_dff
+INFO: [VRFC 10-311] analyzing module gen_rst_def_dff
+INFO: [VRFC 10-311] analyzing module gen_en_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/tinyriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tinyriscv

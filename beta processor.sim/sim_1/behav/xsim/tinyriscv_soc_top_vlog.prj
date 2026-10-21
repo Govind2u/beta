@@ -1,0 +1,34 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/clint.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/csr_reg.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ctrl.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/div.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/gpio.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id_ex.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/if_id.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_top.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/pc_reg.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/ram.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/rib.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/rom.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/spi.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/timer.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/tinyriscv.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v" \
+"C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/soc/tinyriscv_soc_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

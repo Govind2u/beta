@@ -1,0 +1,726 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Oct 20 23:17:55 2026
+# Process ID: 17560
+# Current directory: D:/project/beta processor/beta processor.runs/synth_1
+# Command line: vivado.exe -log tinyriscv_soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tinyriscv_soc_top.tcl
+# Log file: D:/project/beta processor/beta processor.runs/synth_1/tinyriscv_soc_top.vds
+# Journal file: D:/project/beta processor/beta processor.runs/synth_1\vivado.jou
+# Running On: DESKTOP-H9P6DRO, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16473 MB
+#-----------------------------------------------------------
+source tinyriscv_soc_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 395.102 ; gain = 45.840
+Command: read_checkpoint -auto_incremental -incremental {D:/project/beta processor/beta processor.srcs/utils_1/imports/synth_1/tinyriscv_soc_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/project/beta processor/beta processor.srcs/utils_1/imports/synth_1/tinyriscv_soc_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top tinyriscv_soc_top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11828
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Softwares/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v:60]
+WARNING: [Synth 8-6901] identifier 'req' is used before its declaration [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v:68]
+WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v:71]
+WARNING: [Synth 8-6901] identifier 'ack' is used before its declaration [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v:79]
+INFO: [Synth 8-11241] undeclared symbol 'tx_idle', assumed default net type 'wire' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:325]
+WARNING: [Synth 8-11065] parameter 'DM_RESP_BITS' becomes localparam in 'jtag_dm' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:60]
+WARNING: [Synth 8-11065] parameter 'DTM_REQ_BITS' becomes localparam in 'jtag_dm' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:61]
+WARNING: [Synth 8-11065] parameter 'SHIFT_REG_BITS' becomes localparam in 'jtag_dm' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:62]
+WARNING: [Synth 8-11065] parameter 'IDCODE_VERSION' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:47]
+WARNING: [Synth 8-11065] parameter 'IDCODE_PART_NUMBER' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:48]
+WARNING: [Synth 8-11065] parameter 'IDCODE_MANUFLD' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:49]
+WARNING: [Synth 8-11065] parameter 'DTM_VERSION' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:51]
+WARNING: [Synth 8-11065] parameter 'IR_BITS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:52]
+WARNING: [Synth 8-11065] parameter 'DM_RESP_BITS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:54]
+WARNING: [Synth 8-11065] parameter 'DTM_REQ_BITS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:55]
+WARNING: [Synth 8-11065] parameter 'SHIFT_REG_BITS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:56]
+WARNING: [Synth 8-11065] parameter 'TEST_LOGIC_RESET' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:72]
+WARNING: [Synth 8-11065] parameter 'RUN_TEST_IDLE' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:73]
+WARNING: [Synth 8-11065] parameter 'SELECT_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:74]
+WARNING: [Synth 8-11065] parameter 'CAPTURE_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:75]
+WARNING: [Synth 8-11065] parameter 'SHIFT_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:76]
+WARNING: [Synth 8-11065] parameter 'EXIT1_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:77]
+WARNING: [Synth 8-11065] parameter 'PAUSE_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:78]
+WARNING: [Synth 8-11065] parameter 'EXIT2_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:79]
+WARNING: [Synth 8-11065] parameter 'UPDATE_DR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:80]
+WARNING: [Synth 8-11065] parameter 'SELECT_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:81]
+WARNING: [Synth 8-11065] parameter 'CAPTURE_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:82]
+WARNING: [Synth 8-11065] parameter 'SHIFT_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:83]
+WARNING: [Synth 8-11065] parameter 'EXIT1_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:84]
+WARNING: [Synth 8-11065] parameter 'PAUSE_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:85]
+WARNING: [Synth 8-11065] parameter 'EXIT2_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:86]
+WARNING: [Synth 8-11065] parameter 'UPDATE_IR' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:87]
+WARNING: [Synth 8-11065] parameter 'REG_BYPASS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:90]
+WARNING: [Synth 8-11065] parameter 'REG_IDCODE' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:91]
+WARNING: [Synth 8-11065] parameter 'REG_DMI' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:92]
+WARNING: [Synth 8-11065] parameter 'REG_DTMCS' becomes localparam in 'jtag_driver' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:93]
+WARNING: [Synth 8-11065] parameter 'DM_RESP_BITS' becomes localparam in 'jtag_top' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_top.v:48]
+WARNING: [Synth 8-11065] parameter 'DTM_REQ_BITS' becomes localparam in 'jtag_top' with formal parameter declaration list [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_top.v:49]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 836.910 ; gain = 409.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv_soc_top' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/soc/tinyriscv_soc_top.v:20]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v:52]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/tinyriscv.v:17]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/pc_reg.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/pc_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'regs' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v:20]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/regs.v:20]
+INFO: [Synth 8-6157] synthesizing module 'csr_reg' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'csr_reg' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/if_id.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized0' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized0' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/if_id.v:20]
+INFO: [Synth 8-6157] synthesizing module 'id' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v:87]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v:106]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'id' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id.v:21]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id_ex.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized1' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized1' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized2' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized2' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/id_ex.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ex' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v:256]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/ex.v:21]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/div.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/div.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/div.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clint' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/clint.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'clint' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/clint.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/tinyriscv.v:17]
+INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/rom.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/rom.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/ram.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/timer.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/timer.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/timer.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/uart.v:19]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/gpio.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/gpio.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/gpio.v:19]
+INFO: [Synth 8-6157] synthesizing module 'spi' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/spi.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/spi.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'spi' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/perips/spi.v:19]
+INFO: [Synth 8-6157] synthesizing module 'rib' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/rib.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/rib.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'rib' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/rib.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_debug' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:220]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:236]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:269]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:288]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:306]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:324]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:379]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:404]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:423]
+INFO: [Synth 8-6155] done synthesizing module 'uart_debug' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/uart_debug.v:44]
+INFO: [Synth 8-6157] synthesizing module 'jtag_top' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_top.v:20]
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'jtag_driver' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:23]
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:162]
+INFO: [Synth 8-6157] synthesizing module 'full_handshake_tx' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v:23]
+	Parameter DW bound to: 40 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'full_handshake_tx' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_handshake_rx' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v:23]
+	Parameter DW bound to: 40 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'full_handshake_rx' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/utils/full_handshake_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_driver' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'jtag_dm' [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:27]
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:204]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_dm' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_top' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_top.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_soc_top' (0#1) [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/soc/tinyriscv_soc_top.v:20]
+WARNING: [Synth 8-3848] Net raddr_o in module/entity clint does not have driver. [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/core/clint.v:56]
+WARNING: [Synth 8-6014] Unused sequential element sbdata0_reg was removed.  [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:150]
+WARNING: [Synth 8-6014] Unused sequential element command_reg was removed.  [C:/Users/hp/Downloads/BETA CPU/tinyriscv-master/tinyriscv-master/rtl/debug/jtag_dm.v:151]
+WARNING: [Synth 8-7129] Port clk in module rib is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module rib is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m1_req_i in module rib is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[31] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[30] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[29] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[28] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[27] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[26] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[25] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[24] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[23] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[22] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[21] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[20] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[19] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[18] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[17] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[16] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[15] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[14] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[13] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[12] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[11] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[10] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[9] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[8] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[7] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[6] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[5] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[4] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[31] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[30] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[29] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[28] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[27] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[26] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[25] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[24] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[23] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[22] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[21] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[20] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[19] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[18] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[17] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[16] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[15] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[14] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[13] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[12] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[11] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[10] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[9] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[8] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[7] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[6] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[5] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[4] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[31] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[30] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[29] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[28] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[27] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[26] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[25] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[24] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[23] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[22] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[21] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[20] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[19] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[18] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[17] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[16] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[15] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[14] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[13] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[12] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[11] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[10] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[9] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[8] in module uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[31] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[30] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[29] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[28] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[27] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[26] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[25] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[24] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[23] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[22] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[21] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[20] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[19] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[18] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[17] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[16] in module timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[15] in module timer is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.223 ; gain = 579.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.223 ; gain = 579.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.223 ; gain = 579.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'clint'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_debug'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'full_handshake_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'full_handshake_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'jtag_state_reg' in module 'jtag_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                             0001 |                             0001
+             STATE_START |                             0010 |                             0010
+              STATE_CALC |                             0100 |                             0100
+               STATE_END |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_CSR_IDLE |                            00001 |                            00001
+              S_CSR_MEPC |                            00100 |                            00100
+           S_CSR_MSTATUS |                            00010 |                            00010
+            S_CSR_MCAUSE |                            10000 |                            10000
+      S_CSR_MSTATUS_MRET |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'csr_state_reg' in module 'clint'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                   00000000000001 |                   00000000000001
+        S_INIT_UART_BAUD |                   00000000000010 |                   00000000000010
+      S_REC_FIRST_PACKET |                   00000001000000 |                   00000001000000
+S_CLEAR_UART_RX_OVER_FLAG |                   00000000000100 |                   00000000000100
+             S_WAIT_BYTE |                   00000000001000 |                   00000000001000
+            S_WAIT_BYTE2 |                   00000000010000 |                   00000000010000
+              S_GET_BYTE |                   00000000100000 |                   00000000100000
+             S_CRC_START |                   00010000000000 |                   00010000000000
+              S_CRC_CALC |                   00100000000000 |                   00100000000000
+               S_CRC_END |                   01000000000000 |                   01000000000000
+             S_WRITE_MEM |                   10000000000000 |                   10000000000000
+              S_SEND_ACK |                   00000100000000 |                   00000100000000
+              S_SEND_NAK |                   00001000000000 |                   00001000000000
+     S_REC_REMAIN_PACKET |                   00000010000000 |                   00000010000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'uart_debug'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                              001 |                              001
+            STATE_ASSERT |                              010 |                              010
+          STATE_DEASSERT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'full_handshake_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                               01 |                               01
+          STATE_DEASSERT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'full_handshake_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        TEST_LOGIC_RESET |                 0000000000000001 |                             0000
+           RUN_TEST_IDLE |                 0000000000000010 |                             0001
+               SELECT_DR |                 0000000000000100 |                             0010
+               SELECT_IR |                 0000000000001000 |                             1001
+              CAPTURE_IR |                 0000000000010000 |                             1010
+                SHIFT_IR |                 0000000000100000 |                             1011
+                EXIT1_IR |                 0000000001000000 |                             1100
+                PAUSE_IR |                 0000000010000000 |                             1101
+                EXIT2_IR |                 0000000100000000 |                             1110
+               UPDATE_IR |                 0000001000000000 |                             1111
+              CAPTURE_DR |                 0000010000000000 |                             0011
+                SHIFT_DR |                 0000100000000000 |                             0100
+                EXIT1_DR |                 0001000000000000 |                             0101
+                PAUSE_DR |                 0010000000000000 |                             0110
+                EXIT2_DR |                 0100000000000000 |                             0111
+               UPDATE_DR |                 1000000000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jtag_state_reg' using encoding 'one-hot' in module 'jtag_driver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1166.566 ; gain = 739.480
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 16    
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               40 Bit    Registers := 7     
+	               32 Bit    Registers := 91    
+	               16 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 142   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 49    
++---Muxes : 
+	   4 Input   40 Bit        Muxes := 4     
+	   3 Input   40 Bit        Muxes := 3     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 204   
+	  33 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 3     
+	  13 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 25    
+	  11 Input   32 Bit        Muxes := 5     
+	   7 Input   32 Bit        Muxes := 27    
+	   5 Input   32 Bit        Muxes := 10    
+	   3 Input   32 Bit        Muxes := 2     
+	  15 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 24    
+	   7 Input   28 Bit        Muxes := 24    
+	   4 Input   28 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 21    
+	  16 Input   16 Bit        Muxes := 1     
+	  15 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  15 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	  13 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 6     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 20    
+	   3 Input    5 Bit        Muxes := 2     
+	  13 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 3     
+	  13 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 10    
+	  11 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 11    
+	   3 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 256   
+	   7 Input    1 Bit        Muxes := 43    
+	   8 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 24    
+	  13 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 179   
+	  11 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 18    
+	  10 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+----------------+-----------+----------------------+------------------+
+|Module Name       | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------------+----------------+-----------+----------------------+------------------+
+|tinyriscv_soc_top | u_ram/_ram_reg | Implied   | 4 K x 32             | RAM256X1S x 512  | 
+|tinyriscv_soc_top | u_rom/_rom_reg | Implied   | 4 K x 32             | RAM256X1S x 512  | 
++------------------+----------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------------+----------------+-----------+----------------------+------------------+
+|Module Name       | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------------+----------------+-----------+----------------------+------------------+
+|tinyriscv_soc_top | u_ram/_ram_reg | Implied   | 4 K x 32             | RAM256X1S x 512  | 
+|tinyriscv_soc_top | u_rom/_rom_reg | Implied   | 4 K x 32             | RAM256X1S x 512  | 
++------------------+----------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | PCIN>>17+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | PCIN>>17+A*B | 17     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   223|
+|3     |DSP48E1   |     4|
+|4     |LUT1      |   303|
+|5     |LUT2      |   873|
+|6     |LUT3      |   690|
+|7     |LUT4      |   855|
+|8     |LUT5      |  1581|
+|9     |LUT6      |  6294|
+|10    |MUXF7     |   795|
+|11    |MUXF8     |   232|
+|12    |RAM256X1S |  1024|
+|13    |FDCE      |   545|
+|14    |FDPE      |    11|
+|15    |FDRE      |  3713|
+|16    |FDSE      |    21|
+|17    |IBUF      |     8|
+|18    |IOBUF     |     2|
+|19    |OBUF      |     8|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------------+------+
+|      |Instance            |Module                          |Cells |
++------+--------------------+--------------------------------+------+
+|1     |top                 |                                | 17184|
+|2     |  gpio_0            |gpio                            |    98|
+|3     |  spi_0             |spi                             |   171|
+|4     |  timer_0           |timer                           |   177|
+|5     |  u_jtag_top        |jtag_top                        |  2440|
+|6     |    u_jtag_dm       |jtag_dm                         |  2042|
+|7     |      rx            |full_handshake_rx_11            |   446|
+|8     |      tx            |full_handshake_tx_12            |    81|
+|9     |    u_jtag_driver   |jtag_driver                     |   398|
+|10    |      rx            |full_handshake_rx               |    88|
+|11    |      tx            |full_handshake_tx               |    96|
+|12    |  u_ram             |ram                             |   704|
+|13    |  u_rom             |rom                             |   705|
+|14    |  u_tinyriscv       |tinyriscv                       |  8682|
+|15    |    u_clint         |clint                           |   346|
+|16    |    u_csr_reg       |csr_reg                         |   402|
+|17    |    u_div           |div                             |  2666|
+|18    |    u_ex            |ex                              |   164|
+|19    |    u_id_ex         |id_ex                           |  2142|
+|20    |      csr_rdata_ff  |gen_pipe_dff_1                  |    32|
+|21    |      csr_waddr_ff  |gen_pipe_dff_2                  |    26|
+|22    |      csr_we_ff     |gen_pipe_dff__parameterized1    |     2|
+|23    |      inst_ff       |gen_pipe_dff_3                  |  1185|
+|24    |      op1_ff        |gen_pipe_dff_4                  |   228|
+|25    |      op1_jump_ff   |gen_pipe_dff_5                  |    71|
+|26    |      op2_ff        |gen_pipe_dff_6                  |   113|
+|27    |      op2_jump_ff   |gen_pipe_dff_7                  |    22|
+|28    |      reg1_rdata_ff |gen_pipe_dff_8                  |   302|
+|29    |      reg2_rdata_ff |gen_pipe_dff_9                  |   155|
+|30    |      reg_waddr_ff  |gen_pipe_dff__parameterized2    |     5|
+|31    |      reg_we_ff     |gen_pipe_dff__parameterized1_10 |     1|
+|32    |    u_if_id         |if_id                           |   597|
+|33    |      inst_addr_ff  |gen_pipe_dff                    |    63|
+|34    |      inst_ff       |gen_pipe_dff_0                  |   533|
+|35    |      int_ff        |gen_pipe_dff__parameterized0    |     1|
+|36    |    u_pc_reg        |pc_reg                          |   150|
+|37    |    u_regs          |regs                            |  2197|
+|38    |  u_uart_debug      |uart_debug                      |  3929|
+|39    |  uart_0            |uart                            |   254|
++------+--------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1392.355 ; gain = 965.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 379 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1392.355 ; gain = 965.270
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1392.355 ; gain = 965.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.266 . Memory (MB): peak = 1392.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2280 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1392.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1026 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1024 instances
+
+Synth Design complete, checksum: 4c2aec8d
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 1392.355 ; gain = 972.426
+INFO: [Common 17-1381] The checkpoint 'D:/project/beta processor/beta processor.runs/synth_1/tinyriscv_soc_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tinyriscv_soc_top_utilization_synth.rpt -pb tinyriscv_soc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 23:19:30 2026...
